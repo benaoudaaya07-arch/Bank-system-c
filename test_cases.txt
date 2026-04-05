@@ -1,7 +1,51 @@
-Test Case 1: Create Account
-Input: John Doe, 1000, 1234
-Expected Output: Account created successfully, Account ID: 1
+Test Case 1: Create a new account
+Input:
+- User selects "Create Account"
+- Name: John Doe
+- Initial Deposit: 1000
+- PIN: 1234
+Expected Output:
+- Account created successfully
+- Account ID: 1
 
-Test Case 2: Deposit Money
-Input: Account ID 1, PIN 1234, Amount 500
-Expected Output: Deposit successful, New balance: 1500
+Test Case 2: Deposit money
+Input:
+- User selects "Deposit"
+- Account ID: 1
+- PIN: 1234
+- Amount: 500
+Expected Output:
+- Deposit successful
+- New balance: 1500
+
+Test Case 3: Withdraw money
+Input:
+- User selects "Withdraw"
+- Account ID: 1
+- PIN: 1234
+- Amount: 200
+Expected Output:
+- Withdrawal successful
+- New balance: 1300
+
+Test Case 4: Transfer money
+Input:
+- User selects "Transfer"
+- From Account ID: 1
+- PIN: 1234
+- To Account ID: 2
+- Amount: 300
+Expected Output:
+- Transfer successful
+- New balance (Account 1): 1000
+- New balance (Account 2): 300
+
+Test Case 5: View account
+Input:
+- User selects "View Account"
+- Account ID: 1
+- PIN: 1234
+Expected Output:
+- Account ID: 1
+- Name: John Doe
+- Balance: 1000
