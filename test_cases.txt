@@ -1,0 +1,7 @@
+Test Case 1: Create Account
+Input: John Doe, 1000, 1234
+Expected Output: Account created successfully, Account ID: 1
+
+Test Case 2: Deposit Money
+Input: Account ID 1, PIN 1234, Amount 500
+Expected Output: Deposit successful, New balance: 1500
