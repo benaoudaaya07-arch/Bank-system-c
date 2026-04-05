@@ -36,8 +36,7 @@ bank.exe    # On Windows
 See `test_cases.txt` for at least 5 input/output examples demonstrating the program functionality.
 
 
-## File Structure   // NEEED TO LOOK AT !!!!!!!!!!
-- main.c → Main program  
-- bank.c → Bank functions  
-- bank.h → Function declarations  
-- test_cases.txt → Sample inputs and expected outputs  
+## File Structure
+- main.c → Contains the entire program
+- README.md → Project description
+- test_cases.txt → Sample inputs and outputs
