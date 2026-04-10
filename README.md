@@ -1,7 +1,7 @@
 # Bank Management System in C
 
 ## Author
-Aya Benaouda  
+Benaouda Aya 
 First-Year Computer Science — 2025/2026
 
 ## Description
@@ -23,9 +23,9 @@ The program stores account data in arrays and provides a menu-driven interface f
 - PIN verification for account security  
 - Error handling for invalid ID, insufficient balance, and other invalid operations
 
-  ## How to Compile
+## How to Compile
  
- gcc -Wall -Wextra -std=c11 main.c -o bank.exe
+gcc -Wall -Wextra -std=c11 main.c -o bank.exe
 
 ## How to Run
 
