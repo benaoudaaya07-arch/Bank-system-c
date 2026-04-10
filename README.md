@@ -36,7 +36,7 @@ The system also includes **PIN verification** and **error handling** to ensure s
 ## 🛠️ How to Compile
 
 ```bash
-gcc main.c -o bank.exe
+gcc -Wall-Wextra-std=c11-lm main.c -o bank.exe
 ```
 
 ---
