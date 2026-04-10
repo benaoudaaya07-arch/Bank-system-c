@@ -2,7 +2,7 @@
 
 ## Author
 Benaouda Aya 
-First-Year Computer Science — 2025/2026
+ First-Year Computer Science — 2025/2026
 
 ## Description
 This program simulates a simple banking system using the C programming language.  
