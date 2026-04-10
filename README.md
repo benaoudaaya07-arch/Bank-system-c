@@ -55,7 +55,25 @@ bank.exe
 ./bank
 ```
 
+
 ---
+
+## 📷 Screenshots
+
+### Main Menu
+![Main Menu](Bank-system-c/screenshots/menu.png)
+
+### Create Account
+![Create Account](Bank-system-c/screenshots/create%20account.png)
+
+### Deposit Funds
+![Deposit](Bank-system-c/screenshots/deposit.png)
+
+### Accounts List
+![Accounts List](Bank-system-c/screenshots/accounts%20list.png)
+
+---
+
 
 ## 🧪 Test Cases
 
