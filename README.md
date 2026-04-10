@@ -2,7 +2,8 @@
 
 ## 👤 Author
 
-Aya Benaouda
+Benaouda Aya
+
 First-Year Computer Science — 2025/2026
 
 ---
