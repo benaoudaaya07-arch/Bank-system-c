@@ -79,7 +79,7 @@ int main () {
         printf("8. Close account\n");
         printf("0. Save and exit\n");
         printf("============================================\n");
-        printf("\n - Enter your choice: ");scanf("%d ",&choice);
+        printf("\n - Enter your choice: ");scanf("%d",&choice);
 
         switch (choice)
         {
@@ -107,7 +107,7 @@ int main () {
             if (oldbalance < accounts[idx].balance)
             {
                 printf(" - Successfully deposited %.2f DZD\n",amount);   
-                printf(" -Your Balance is %.2f DZD\n",accounts[idx].balance); 
+                printf(" - Your Balance is %.2f DZD\n",accounts[idx].balance); 
             }
             saveData();   // saving data after option risk of data loss when program crash
             break;
@@ -197,7 +197,7 @@ int main () {
 
         case 0:
             saveData();
-            printf("\n - DATA saved,Thank you for using THE NATIONAL BANK OF ALGERIA!\n");
+            printf("\n - DATA saved.\nThank you for using THE NATIONAL BANK OF ALGERIA!\n");
             break;   
         default:
             printf("\n - Invalid choice! Please select 0-8\n");

@@ -16,7 +16,9 @@
 
 * Account created successfully
 * Account ID: 1001
-* Balance: 1500.00 DZD
+* Name      : John Doe
+* Balance   : 1500.00 DZD
+* PIN       : 1234
 
 ---
 
@@ -45,7 +47,7 @@
 * User selects "Create Account"
 * Name: Sam Smith
 * Initial Deposit: 2000
-* PIN: 123 (invalid)
+* PIN: -11 (invalid)
 * Then enters: 4321
 
 **Expected Output:**
@@ -82,7 +84,7 @@
 
 **Expected Output:**
 
-* Error: Invalid amount
+*Invalid amount! (MUST BE > 0 DZD)
 
 ---
 
@@ -113,8 +115,7 @@
 
 **Expected Output:**
 
-* Error: Insufficient funds
-
+*  Insufficient funds! Your balance is: 1700.00 DZD
 ---
 
 ## 🔴 Test Case 8: Wrong PIN (3 Attempts)
@@ -128,7 +129,7 @@
 **Expected Output:**
 
 * Wrong PIN (3 times)
-* Access denied
+* Access denied after 3 failed attempts.
 
 ---
 
@@ -164,9 +165,8 @@
 
 **Expected Output:**
 
-* Transfer successful
-* New balance (1002): 1500.00 DZD
-* New balance (1003): 1500.00 DZD
+*- Transfer of 500.00 DZD successful!
+*- From Account ID 1002 To Account ID 1003
 
 ---
 
@@ -196,6 +196,7 @@
 
 * Displays all active accounts
 * Sorted by balance (highest → lowest)
+* with color coded balance.
 
 ---
 
@@ -225,7 +226,7 @@
 
 **Expected Output:**
 
-* Error: Cannot close account with non-zero balance
+* Cannot close account! You must withdraw all money first.
 
 ---
 
@@ -249,7 +250,7 @@
 
 **Expected Output:**
 
-* Account closed successfully
+* Account ID 1001 has been closed successfully.
 
 ---
 
@@ -262,8 +263,7 @@
 
 **Expected Output:**
 
-* Data loaded successfully
-* Previously created accounts are available
+*  DATA saved,Thank you for using THE NATIONAL BANK OF ALGERIA!
 
 ---
 
@@ -276,7 +276,7 @@
 
 **Expected Output:**
 
-* Error: Account not found or inactive
+* Error: Account not found or inactive!
 
 ---
 
