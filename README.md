@@ -24,8 +24,8 @@ The program stores account data in arrays and provides a menu-driven interface f
 - Error handling for invalid ID, insufficient balance, and other invalid operations
 
   ## How to Compile
-  
- gcc main.c -o bank.exe
+ 
+ gcc -Wall -Wextra -std=c11 main.c -o bank.exe
 
 ## How to Run
 
@@ -33,8 +33,7 @@ The program stores account data in arrays and provides a menu-driven interface f
 bank.exe    # On Windows
 
 ## Test Cases
-See `test_cases.txt` for at least 5 input/output examples demonstrating the program functionality.
-
+The file `test_cases.txt` contains multiple test scenarios (minimum 5), showcasing different functionalities of the system such as account creation, deposits, withdrawals, transfers, and error handling.
 
 ## File Structure
 - main.c → Contains the entire program

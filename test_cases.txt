@@ -1,51 +1,293 @@
-Test Case 1: Create a new account
-Input:
-- User selects "Create Account"
-- Name: John Doe
-- Initial Deposit: 1000
-- PIN: 1234
-Expected Output:
-- Account created successfully
-- Account ID: 1
 
-Test Case 2: Deposit money
-Input:
-- User selects "Deposit"
-- Account ID: 1
-- PIN: 1234
-- Amount: 500
-Expected Output:
-- Deposit successful
-- New balance: 1500
+# 🧪 Test Cases – Bank Management System
 
-Test Case 3: Withdraw money
-Input:
-- User selects "Withdraw"
-- Account ID: 1
-- PIN: 1234
-- Amount: 200
-Expected Output:
-- Withdrawal successful
-- New balance: 1300
+---
 
-Test Case 4: Transfer money
-Input:
-- User selects "Transfer"
-- From Account ID: 1
-- PIN: 1234
-- To Account ID: 2
-- Amount: 300
-Expected Output:
-- Transfer successful
-- New balance (Account 1): 1000
-- New balance (Account 2): 300
+## ✅ Test Case 1: Create a New Account (Valid)
 
-Test Case 5: View account
-Input:
-- User selects "View Account"
-- Account ID: 1
-- PIN: 1234
-Expected Output:
-- Account ID: 1
-- Name: John Doe
-- Balance: 1000
+**Input:**
+
+* User selects "Create Account"
+* Name: John Doe
+* Initial Deposit: 1500
+* PIN: 1234
+
+**Expected Output:**
+
+* Account created successfully
+* Account ID: 1001
+* Balance: 1500.00 DZD
+
+---
+
+## 🔴 Test Case 2: Create Account (Invalid Deposit)
+
+**Input:**
+
+* User selects "Create Account"
+* Name: Jane Doe
+* Initial Deposit: 500
+* Then enters: 1200
+* PIN: 5678
+
+**Expected Output:**
+
+* Error: Initial deposit must be at least 1000 DZD
+* Account created successfully
+* Balance: 1200.00 DZD
+
+---
+
+## 🔴 Test Case 3: Create Account (Invalid PIN)
+
+**Input:**
+
+* User selects "Create Account"
+* Name: Sam Smith
+* Initial Deposit: 2000
+* PIN: 123 (invalid)
+* Then enters: 4321
+
+**Expected Output:**
+
+* Error: Invalid PIN
+* Account created successfully
+
+---
+
+## ✅ Test Case 4: Deposit Money
+
+**Input:**
+
+* User selects "Deposit"
+* Account ID: 1001
+* PIN: 1234
+* Amount: 500
+
+**Expected Output:**
+
+* Deposit successful
+* New balance: 2000.00 DZD
+
+---
+
+## 🔴 Test Case 5: Deposit Invalid Amount
+
+**Input:**
+
+* User selects "Deposit"
+* Account ID: 1001
+* PIN: 1234
+* Amount: -100
+
+**Expected Output:**
+
+* Error: Invalid amount
+
+---
+
+## ✅ Test Case 6: Withdraw Money
+
+**Input:**
+
+* User selects "Withdraw"
+* Account ID: 1001
+* PIN: 1234
+* Amount: 300
+
+**Expected Output:**
+
+* Withdrawal successful
+* New balance: 1700.00 DZD
+
+---
+
+## 🔴 Test Case 7: Withdraw (Insufficient Funds)
+
+**Input:**
+
+* User selects "Withdraw"
+* Account ID: 1001
+* PIN: 1234
+* Amount: 5000
+
+**Expected Output:**
+
+* Error: Insufficient funds
+
+---
+
+## 🔴 Test Case 8: Wrong PIN (3 Attempts)
+
+**Input:**
+
+* User selects "Deposit"
+* Account ID: 1001
+* PIN attempts: 1111, 2222, 3333
+
+**Expected Output:**
+
+* Wrong PIN (3 times)
+* Access denied
+
+---
+
+## 🔄 Test Case 9: Transfer Money (Valid)
+
+**Input:**
+
+* User selects "Create Account"
+
+* Name: Alice
+
+* Deposit: 2000
+
+* PIN: 2222
+
+* User selects "Create Account"
+
+* Name: Bob
+
+* Deposit: 1000
+
+* PIN: 3333
+
+* User selects "Transfer"
+
+* From Account ID: 1002
+
+* PIN: 2222
+
+* To Account ID: 1003
+
+* Amount: 500
+
+**Expected Output:**
+
+* Transfer successful
+* New balance (1002): 1500.00 DZD
+* New balance (1003): 1500.00 DZD
+
+---
+
+## 🔴 Test Case 10: Transfer to Same Account
+
+**Input:**
+
+* User selects "Transfer"
+* From Account ID: 1001
+* PIN: 1234
+* To Account ID: 1001
+* Amount: 100
+
+**Expected Output:**
+
+* Error: Cannot transfer to the same account
+
+---
+
+## 📋 Test Case 11: List All Accounts
+
+**Input:**
+
+* User selects "List All Accounts"
+
+**Expected Output:**
+
+* Displays all active accounts
+* Sorted by balance (highest → lowest)
+
+---
+
+## 📊 Test Case 12: Bank Summary
+
+**Input:**
+
+* User selects "Bank Summary"
+
+**Expected Output:**
+
+* Total active accounts
+* Total balance
+* Average balance
+* Highest balance
+* Lowest balance
+
+---
+
+## 🔒 Test Case 13: Close Account (Fail)
+
+**Input:**
+
+* User selects "Close Account"
+* Account ID: 1001
+* PIN: 1234
+
+**Expected Output:**
+
+* Error: Cannot close account with non-zero balance
+
+---
+
+## 🔒 Test Case 14: Close Account (Success)
+
+**Input:**
+
+* User selects "Withdraw"
+
+* Account ID: 1001
+
+* PIN: 1234
+
+* Amount: 1700
+
+* User selects "Close Account"
+
+* Account ID: 1001
+
+* PIN: 1234
+
+**Expected Output:**
+
+* Account closed successfully
+
+---
+
+## 💾 Test Case 15: Save and Reload Data
+
+**Input:**
+
+* User selects "Exit (0)"
+* Restart program
+
+**Expected Output:**
+
+* Data loaded successfully
+* Previously created accounts are available
+
+---
+
+## ⚠️ Test Case 16: Account Not Found
+
+**Input:**
+
+* User selects "Deposit"
+* Account ID: 9999
+
+**Expected Output:**
+
+* Error: Account not found or inactive
+
+---
+
+## ⚠️ Test Case 17: Maximum Accounts Limit
+
+**Input:**
+
+* User creates 50 accounts
+
+**Expected Output:**
+
+* Error: Bank is full
+
+---
