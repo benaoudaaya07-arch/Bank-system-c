@@ -1,41 +1,92 @@
-# Bank Management System in C
+# 🏦 Bank Management System in C
 
-## Author
-Benaouda Aya 
- First-Year Computer Science — 2025/2026
+## 👤 Author
 
-## Description
-This program simulates a simple banking system using the C programming language.  
+Aya Benaouda
+First-Year Computer Science — 2025/2026
 
-Users can:
-- Create new accounts  
-- Deposit money  
-- Withdraw money  
-- Transfer money between accounts  
-- View account information  
-- Close accounts  
+---
 
-The program stores account data in arrays and provides a menu-driven interface for easy interaction. It also includes PIN verification and basic error handling to ensure security and correctness.
+## 📌 Description
 
-## Features
-- Maximum of 50 accounts  
-- Unique account ID for each user  
-- PIN verification for account security  
-- Error handling for invalid ID, insufficient balance, and other invalid operations
+This project is a simple **Bank Management System** developed in the C programming language.
 
-## How to Compile
- 
-gcc -Wall -Wextra -std=c11 main.c -o bank.exe
+It simulates basic banking operations using a menu-driven interface and stores data using arrays and file handling.
 
-## How to Run
+The system also includes **PIN verification** and **error handling** to ensure secure and reliable operations.
 
-./bank      # On Linux or Mac
-bank.exe    # On Windows
+---
 
-## Test Cases
-The file `test_cases.txt` contains multiple test scenarios (minimum 5), showcasing different functionalities of the system such as account creation, deposits, withdrawals, transfers, and error handling.
+## ⚙️ Features
 
-## File Structure
-- main.c → Contains the entire program
-- README.md → Project description
-- test_cases.txt → Sample inputs and outputs
+* Create new bank accounts
+* Deposit money into accounts
+* Withdraw money safely
+* Transfer money between accounts
+* View account details
+* Close accounts securely
+* Maximum of **50 accounts**
+* Unique account ID generation
+* PIN-based authentication
+* File-based data persistence (`bank_data.txt`)
+
+---
+
+## 🛠️ How to Compile
+
+```bash
+gcc main.c -o bank.exe
+```
+
+---
+
+## ▶️ How to Run
+
+### Windows:
+
+```bash
+bank.exe
+```
+
+### Linux / Mac:
+
+```bash
+./bank
+```
+
+---
+
+## 🧪 Test Cases
+
+The file `test_cases.txt` contains multiple test scenarios (minimum 5), including:
+
+* Account creation
+* Deposits
+* Withdrawals
+* Transfers
+* Error handling cases
+
+---
+
+## 📁 Project Structure
+
+```
+main.c            → Full source code
+README.md         → Project documentation
+test_cases.txt    → Test scenarios
+bank_data.txt     → Stored account data (auto-generated)
+```
+
+---
+
+## 🚀 Notes
+
+* Data is automatically saved when exiting the program
+* Accounts are loaded on program startup
+* PIN verification is required for sensitive operations
+
+---
+
+## 📌 Status
+
+✔ Completed Project — First-Year C Programming Assignment
