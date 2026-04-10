@@ -327,8 +327,9 @@ void createAccount(){
    // clear input buffer safely
 
    int c;
-   while ((c = getchar()) != '\n'  &&  c != EOF);  // EOF : end of file ,
-   
+   while ((c = getchar()) != '\n'  &&  c != EOF)  // EOF : end of file ,
+   {  // empty loop to clear buffer 
+    }
    
     fgets(accounts[count].name,50,stdin); 
     //Remove newline from fgets
