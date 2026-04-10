@@ -79,7 +79,7 @@ int main () {
         printf("8. Close account\n");
         printf("0. Save and exit\n");
         printf("============================================\n");
-        printf("\n - Enter your choice: ");scanf("%d ",&choice);
+        printf("\n - Enter your choice: ");scanf("%d",&choice);
 
         switch (choice)
         {
