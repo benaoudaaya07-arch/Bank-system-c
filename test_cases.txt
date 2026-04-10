@@ -8,7 +8,7 @@
 **Input:**
 
 * User selects "Create Account"
-* Name: John Doe
+* Name: Harry Potter
 * Initial Deposit: 1500
 * PIN: 1234
 
@@ -16,7 +16,7 @@
 
 * Account created successfully
 * Account ID: 1001
-* Name      : John Doe
+* Name      : Harry Potter
 * Balance   : 1500.00 DZD
 * PIN       : 1234
 
@@ -27,7 +27,7 @@
 **Input:**
 
 * User selects "Create Account"
-* Name: Jane Doe
+* Name: Harry Potter
 * Initial Deposit: 500
 * Then enters: 1200
 * PIN: 5678

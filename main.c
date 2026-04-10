@@ -285,7 +285,7 @@ void saveData(){
 
     for (int i = 0; i < count; i++)
     {
-        fprintf(pFile,"%d|%s|%.2f|%d|%d\n",
+        fprintf(pFile,"%d|%s|%.2f|%04d|%d\n",
            accounts[i].id,
            accounts[i].name, 
            accounts[i].balance,
@@ -355,7 +355,7 @@ void createAccount(){
       printf(" - Enter 4-digit PIN(0000-9999): ");
       scanf("%d", &accounts[count].pin);
 
-     if (accounts[count].pin<1000 || accounts[count].pin>9999)
+     if (accounts[count].pin<0 || accounts[count].pin>9999)
      {
          printf(" - Invalid PIN! Must be between 1000 and 9999.\n");
      }
