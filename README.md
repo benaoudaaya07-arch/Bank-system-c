@@ -46,7 +46,7 @@ gcc -Wall-Wextra-std=c11-lm main.c -o bank.exe
 ### Windows:
 
 ```bash
-bank.exe
+./bank.exe
 ```
 
 ### Linux / Mac:
